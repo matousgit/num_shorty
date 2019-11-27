@@ -20,7 +20,7 @@ HISTORY = open('CHANGES.txt').read().replace('.. :changelog:', '')
 
 setup(
     name='num_shorty',
-    version='0.1.1',
+    version='1.0.0',
     description="Converts an integer to a hexdigest like string - except not 16 length but provided alphabet length",
     long_description=README + '\n\n' + HISTORY,
     author='Matouš Höschl',
@@ -33,6 +33,7 @@ setup(
     zip_safe=False,
     entry_points={
     },
+    download_url='https://github.com/matousgit/num_shorty/archive/1.0.0.tar.gz',
     classifiers=[
         'Intended Audience :: Developers',
         'Natural Language :: English',

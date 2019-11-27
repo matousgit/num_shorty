@@ -15,14 +15,13 @@ if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
     sys.exit()
 
-README = open('README.md').read()
-HISTORY = open('CHANGES.txt').read().replace('.. :changelog:', '')
+README = open('README.rst').read()
 
 setup(
     name='num_shorty',
-    version='1.0.0',
+    version='1.0.1',
     description="Converts an integer to a hexdigest like string - except not 16 length but provided alphabet length",
-    long_description=README + '\n\n' + HISTORY,
+    long_description=README,
     author='Matouš Höschl',
     packages=[
         'num_shorty',
@@ -33,7 +32,7 @@ setup(
     zip_safe=False,
     entry_points={
     },
-    download_url='https://github.com/matousgit/num_shorty/archive/1.0.0.tar.gz',
+    download_url='https://github.com/matousgit/num_shorty/archive/1.0.1.tar.gz',
     classifiers=[
         'Intended Audience :: Developers',
         'Natural Language :: English',
